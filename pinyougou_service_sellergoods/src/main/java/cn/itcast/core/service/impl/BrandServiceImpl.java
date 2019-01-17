@@ -14,7 +14,10 @@ public class BrandServiceImpl implements BrandService {
     @Autowired
     private BrandDao brandDao;
 
-
+    /**
+     * 查询所有
+     * @return
+     */
     @Override
     public List<Brand> findAll() {
         return brandDao.selectByExample(null);
