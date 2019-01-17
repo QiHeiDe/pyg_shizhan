@@ -21,6 +21,7 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public List<Brand> findAll() {
         System.out.println("aaa+++++++++");
+        System.out.println("aaa2+++++++++");
         return brandDao.selectByExample(null);
     }
 }
